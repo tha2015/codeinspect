@@ -10,7 +10,9 @@ wget -N https://www.jetbrains.com/intellij-repository/snapshots/com/jetbrains/in
 
 unzip -o ideaIC-171-SNAPSHOT.zip -d ideaC
 mvn install:install-file -Dfile=ideaC/lib/idea.jar -DgroupId=org.jetbrains -DartifactId=idea -Dversion=171 -Dpackaging=jar
+mvn install:install-file -Dfile=ideaIC-171-SNAPSHOT-sources.jar -DgroupId=org.jetbrains -DartifactId=idea -Dversion=171 -Dpackaging=jar -Dclassifier=sources
 mvn install:install-file -Dfile=ideaC/lib/resources_en.jar -DgroupId=org.jetbrains -DartifactId=resources_en -Dversion=171 -Dpackaging=jar
-
 mvn install:install-file -Dfile=ideaC/lib/openapi.jar -DgroupId=org.jetbrains -DartifactId=openapi -Dversion=171 -Dpackaging=jar
+mvn install:install-file -Dfile=ideaIC-171-SNAPSHOT-sources.jar -DgroupId=org.jetbrains -DartifactId=openapi -Dversion=171 -Dpackaging=jar -Dclassifier=sources
 mvn install:install-file -Dfile=ideaC/lib/util.jar -DgroupId=org.jetbrains -DartifactId=util -Dversion=171 -Dpackaging=jar
+mvn install:install-file -Dfile=ideaIC-171-SNAPSHOT-sources.jar -DgroupId=org.jetbrains -DartifactId=util -Dversion=171 -Dpackaging=jar -Dclassifier=sources
